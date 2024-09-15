@@ -1,37 +1,76 @@
-html,
-body {
-    height: 100%;
-}
+.section {
+    padding: 80px 0;
 
-/* page container and row */
-.page-container {
-    text-align: center;
-    padding: 50px 0;
-}
-@include media-breakpoint-down(sm){
-    .row {
-        margin-left: 0;
-        margin-right: 0;
+    &.bg-custom-gray {
+        background: rgba(#F2F4F7, .15);
     }
 }
 
-/* Conatct section */
-.contact-section {
-    padding-top: 120px;
-    z-index: 990;
-    position: relative;
-    text-align: center;
-    color: $white;
-    background-image: url(../imgs/footer.jpg);
-    background-size: cover;
-    background-position: bottom;
+.about-section {
+    border-bottom: 1px solid $border-color;
 
-    .overlay {
+    .about-card {
+        padding: 60px;
+        border-right: 1px solid $border-color;
+
+        &:last-child {
+            border-right: none;
+        }
+
+    }
+}
+
+
+.contact {
+    position: relative;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+
+    @include media-breakpoint-down(md) {
+        padding: 300px 0 0;
+
+        .contact-form-card {
+            border-bottom: 1px solid $border-color;
+        }
+
+        .contact-form-card,
+        .contact-info-card {
+            min-height: auto !important;
+        }
+    }
+
+    .map {
         position: absolute;
         left: 0;
         top: 0;
-        height: 100%;
         width: 100%;
-        background-image: radial-gradient(200% 130% at 48% 65%,rgba($dark-theme-color, .50),rgba($dark-theme-color, .60),rgba($dark-theme-color, .70),rgba($dark-theme-color, .87),rgba($dark-theme-color, .99),$dark-theme-color 55%,$dark-theme-color 200%,);
+        height: 100%;
+    }
+
+    .contact-form-card,
+    .contact-info-card {
+        padding: 35px;
+        background: $white;
+        min-height: 500px;
+    }
+
+    .contact-info-card {
+        padding-right: 20px;
+    }
+
+    .contact-title {
+        margin-bottom: 30px;
+
+        &::after {
+            content: '';
+            width: 20px;
+            height: 2px;
+            background: $primary;
+            display: block;
+            margin-top: 10px;
+        }
     }
 }

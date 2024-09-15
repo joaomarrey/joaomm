@@ -1,6 +1,6 @@
 /*!
 =========================================================
-* Dorang Landing page V 1.0
+* JohnDoe Landing page
 =========================================================
 
 * Copyright: 2019 DevCRUD (https://devcrud.com)
@@ -62,17 +62,18 @@
 @import "vendors/bootstrap-4.3.1/print";
 
 
-// custom  
+// custom 
 @import "base/typography";
 
-@import "components/cards";
-@import "components/contact-form";
-@import "components/modal";
+@import "components/breadcrumb";
+@import "components/button";
+@import "components/card";
+@import "components/code";
+@import "components/dropdowns";
+@import "components/nav";
 @import "components/navbars";
+@import "components/pagination";
 
 @import "layout/footer";
 @import "layout/header";
 @import "layout/sections";
-
-@import "themes/light";
-@import "themes/dark";
