@@ -148,3 +148,61 @@ function initMap() {
       ]
     });
 }
+
+// Language
+let currentLanguage = localStorage.getItem('selectedLanguage') || 'en';
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyLanguage(currentLanguage);
+});
+
+// Function to change the language based on input
+function changeLang(lang) {
+  currentLanguage = lang; // Update to the new language
+  
+  // Save the selected language to localStorage
+  localStorage.setItem('selectedLanguage', currentLanguage);
+
+  // Apply the language change
+  applyLanguage(currentLanguage);
+}
+
+// Function to apply the selected language
+function applyLanguage(lang) {
+  const elements = document.querySelectorAll('.multilanguage');
+
+  elements.forEach(element => {
+    // Update the text content or placeholder of the current element
+    const content = element.getAttribute(`data-${lang}`);
+    
+    if (element.tagName.toLowerCase() === 'input' || element.tagName.toLowerCase() === 'textarea') {
+      // If the element is an input, update the placeholder
+      if (content) {
+        element.placeholder = content; // Update the placeholder
+      }
+    } else {
+      // Otherwise, update the text content
+      if (content) {
+        element.textContent = content; // Update the text content
+      }
+    }
+  });
+}
+
+//dropdown
+function toggleDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show_joao");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown_joao button')) {
+      const dropdowns = document.getElementsByClassName("dropdown_joao-content");
+      for (let i = 0; i < dropdowns.length; i++) {
+          const openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show_joao')) {
+              openDropdown.classList.remove('show_joao');
+          }
+      }
+  }
+};

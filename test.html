@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu Example</title>
+    <style>
+        /* Basic styles for the dropdown */
+        .dropdown_joao {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown_joao-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            min-width: 160px;
+        }
+
+        .dropdown_joao-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown_joao-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .show_joao {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dropdown_joao">
+    <button onclick="toggleDropdown()">Select Language</button>
+    <div id="myDropdown" class="dropdown_joao-content">
+        <a href="#" onclick="changeLang('en')">
+            <img src="path/to/english-flag.png" alt="English" style="width: 20px; height: auto;"> English
+        </a>
+        <a href="#" onclick="changeLang('pt')">
+            <img src="path/to/portuguese-flag.png" alt="Portuguese" style="width: 20px; height: auto;"> Português
+        </a>
+    </div>
+</div>
+
+<script>
+    function toggleDropdown() {
+        document.getElementById("myDropdown").classList.toggle("show_joao");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown_joao button')) {
+            const dropdowns = document.getElementsByClassName("dropdown_joao-content");
+            for (let i = 0; i < dropdowns.length; i++) {
+                const openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show_joao')) {
+                    openDropdown.classList.remove('show_joao');
+                }
+            }
+        }
+    };
+</script>
+
+</body>
+</html>

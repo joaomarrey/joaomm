@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="assets/css/johndoe.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+    <!-- <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
@@ -21,9 +21,9 @@
                 <li class="social-item"><a class="social-link text-light" href="https://github.com/joaomarrey"><i class="ti-github" aria-hidden="true"></i></a></li>
             </ul>  
             <div class="header-content">
-                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h4 class="header-subtitle multilanguage" data-en='Hello, I am' data-pt='Olá, eu sou'></h4>
                 <h1 class="header-title">João Marrey</h1>
-                <h6 class="header-mono" >Economist | Programmer</h6>
+                <h6 class="header-mono multilanguage" data-en='Economist | Programmer' data-pt='Economista | Programador'></h6>
                 <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
             </div>
         </div>
@@ -36,31 +36,44 @@
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link multilanguage" data-en='Home' data-pt='Home'></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
+                        <a href="#about" class="nav-link multilanguage" data-en='About' data-pt='Sobre'></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
+                        <a href="#resume" class="nav-link multilanguage" data-en='Resume' data-pt='Currículo'></a>
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
                     <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">João Marrey Mendonça</h5>
-                        <div class="brand-subtitle">Economist | Programmer</div>
+                        <div class="brand-subtitle multilanguage" data-en='Economist | Programmer' data-pt='Economista | Programador'></div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
+                        <a href="#blog" class="nav-link multilanguage" data-en='Accomplishments' data-pt='Realizações'></a>
                     </li>
                     <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link multilanguage" data-en='Contact' data-pt='Contato'></a>
+                    </li>
+                    <li class="nav-item last-item"></li>
+                        <div class="dropdown_joao">
+                            <button class="drop_button multilanguage" onclick="toggleDropdown()" data-en="Language" data-pt="Língua"></button>
+                            <div id="myDropdown" class="dropdown_joao-content">
+                                <a href="#" onclick="changeLang('en')">
+                                    <img src="assets/imgs/english.png" alt="English" style="width: 20px; height: auto;"> English
+                                </a>
+                                <a href="#" onclick="changeLang('pt')">
+                                    <img src="assets/imgs/portuguese.png" alt="Portuguese" style="width: 20px; height: auto;"> Português
+                                </a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -69,21 +82,21 @@
     <div class="container-fluid">
         <div id="about" class="row about-section">
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
+                <h3 class="font-weight-light multilanguage" data-en='Who am I ?' data-pt='Quem sou eu?'></h3>
                 <span class="line mb-5"></span>
-                <h5 class="mb-3">I am an economist who loves programming</h5>
-                <p class="mt-20">Currently studying economics at the University of São Paulo, I developed a passion by numbers and coding durying my journey.</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
+                <h5 class="mb-3 multilanguage" data-en='I am an economist who loves programming' data-pt='Eu sou um economista que ama programação'></h5>
+                <p class="mt-20 multilanguage" data-en='Currently studying economics at the University of São Paulo, I developed a passion by numbers and coding durying my journey.' data-pt='Atualmente estudando economia na Universidade de São Paulo, desenvolvi uma paixão por números e códigos durante minha jornada'></p>
+                <button class="btn btn-outline-danger multilanguage" data-en='Download My CV' data-pt='Baixar Meu CV'><i class="icon-down-circled2 "></i></button>
             </div>
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
+                <h3 class="font-weight-light multilanguage" data-en='Personal Info' data-pt='Informações Pessoais'></h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 09 of May 2003</li>
+                    <li><span class="multilanguage" data-en='Birthdate' data-pt='Data de Nascimento'></span><span class="multilanguage" style="color: #6c757d; font-weight: 400;" data-en=' : 09 of May 2003' data-pt=' : 09 de Maio 2003'></span></li>
                     <li><span>Email</span> : joaomarreymen@gmail.com</li>
-                    <li><span>Phone</span> : +55 (11) 94146-0905</li>
+                    <li><span class="multilanguage" data-en='Phone' data-pt='Telefone'></span> : +55 (11) 94146-0905</li>
                     <li><span>GitHub</span> :  <a href="https://github.com/joaomarrey">joaomarrey</a> </li>
-                    <li><span>Nationality</span> : Brazilian </li>
+                    <li><span class="multilanguage" data-en='Nationality' data-pt='Nacionalidade'></span><span class="multilanguage" style="color: #6c757d; font-weight: 400;" data-en=' : Brazilian ' data-pt=' : Brasileiro'></span></li>
                 </ul>
                 <ul class="social-icons pt-3">
                     <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/joao-marrey-mendonca"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
@@ -92,29 +105,29 @@
                 </ul>  
             </div>
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">My Expertise</h3>
+                <h3 class="font-weight-light multilanguage" data-en='My Expertise' data-pt='Minha Experiência'></h3>
                 <span class="line mb-5"></span>
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Economics</h6>
-                        <p class="subtitle">voluptate commodi illo voluptatib.</p>
+                        <h6 class="multilanguage" data-en='Economics' data-pt='Economia'></h6>
+                        <p class="subtitle multilanguage" data-en='voluptate commodi illo voluptatib.' data-pt='voluptate commodi illo voluptatib.'></p>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-desktop icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Programming</h6>
-                        <p class="subtitle"> exercitat Repellendus,  corrupt.</p>
+                        <h6 class="multilanguage" data-en='Programming' data-pt='Programação'></h6>
+                        <p class="subtitle multilanguage" data-en=' exercitat Repellendus,  corrupt.' data-pt=' exercitat Repellendus,  corrupt.'></p>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-money icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Finance</h6>
-                        <p class="subtitle">Lorem ipsum dolor sit consectetur.</p>
+                        <h6 class="multilanguage" data-en='Finance' data-pt='Finanças'></h6>
+                        <p class="subtitle multilanguage" data-en='Lorem ipsum dolor sit consectetur.' data-pt='Lorem ipsum dolor sit consectetur.'></p>
                         <hr>
                     </div>
                 </div>
@@ -125,28 +138,28 @@
     <!--Resume Section-->
     <section class="section" id="resume">
         <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <h2 class="mb-5"><span class="text-danger multilanguage" data-en='My' data-pt='Meu'></span><span class="multilanguage" data-en=' Resume' data-pt=' Currículo'></span></h2>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
                        <div class="card-header">
                             <div class="mt-2">
-                                <h4>Expertise</h4>
+                                <h4 class="multilanguage" data-en='Expertise' data-pt='Experiência'></h4>
                                 <span class="line"></span>  
                             </div>
                         </div>
                         <div class="card-body">
                             <h6 class="title text-danger">2024 - 2025</h6>
-                            <P>University Exchange in Germany</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            <P class="multilanguage" data-en='University Exchange in Germany' data-pt='Intercâmbio Universitário na Alemanha'></P>
+                            <P class="subtitle multilanguage" data-en='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.' data-pt='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.'></P>
                             <hr>
                             <h6 class="title text-danger">2023 - 2024</h6>
-                            <P>Internship at Dunamis Trading Group</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            <P class="multilanguage" data-en='Internship at Dunamis Trading Group' data-pt='Estágio em Dunamis Trading Group'></P>
+                            <P class="subtitle multilanguage" data-en='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.' data-pt='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.'></P>
                             <hr>
                             <h6 class="title text-danger">2019 - 2019</h6>
-                            <P>Student Exchange in the United States</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            <P class="multilanguage" data-en='Student Exchange in the United States' data-pt='Intercâmbio Escolar nos Estados Unidos'></P>
+                            <P class="subtitle multilanguage" data-en='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.' data-pt='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.'></P>
                         </div>
                     </div>
                 </div>
@@ -154,7 +167,7 @@
                     <div class="card">
                        <div class="card-header">
                             <div class="mt-2">
-                                <h4>Education</h4>
+                                <h4 class="multilanguage" data-en='Education' data-pt='Educação'></h4>
                                 <span class="line"></span>  
                             </div>
                         </div>
@@ -164,12 +177,12 @@
                             <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.</P>
                             <hr> -->
                             <h6 class="title text-danger">2021 - 2025</h6>
-                            <P>Bachelors Degree in Economics at USP</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, id officiis quas placeat quia voluptas dolorum rem animi nostrum quae.aliquid repudiandae saepe!.</P>
+                            <P class="multilanguage" data-en='Bachelors Degree in Economics at USP' data-pt='Bacharelado em Economia na USP'></P>
+                            <P class="subtitle multilanguage" data-en='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.' data-pt='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.'></P>
                             <hr>
                             <h6 class="title text-danger">2018 - 2020</h6>
-                            <P>High School Degree</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            <P class="multilanguage" data-en='High School Degree' data-pt='Ensino Médio'></P>
+                            <P class="subtitle multilanguage" data-en='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.' data-pt='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.'></P>
                             
                         </div>
                     </div>
@@ -178,7 +191,7 @@
                     <div class="card">
                        <div class="card-header">
                             <div class="pull-left">
-                                <h4 class="mt-2">Programming Skills</h4>
+                                <h4 class="mt-2 multilanguage" data-en='Programming Skills' data-pt='Programação'></h4>
                                 <span class="line"></span>  
                             </div>
                         </div>
@@ -212,24 +225,24 @@
                     <div class="card">
                        <div class="card-header">
                             <div class="pull-left">
-                                <h4 class="mt-2">Languages</h4>
+                                <h4 class="mt-2 multilanguage" data-en='Languages' data-pt='Línguas'></h4>
                                 <span class="line"></span>  
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                            <h6>Portuguese</h6>
+                            <h6 class="multilanguage" data-en='Portuguese' data-pt='Português'></h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div> 
-                           <h6>English</h6>
+                           <h6 class="multilanguage" data-en='English' data-pt='Inglês'></h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Spanish</h6>
+                            <h6 class="multilanguage" data-en='Spanish' data-pt='Espanhol'></h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 83.3%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>German</h6>
+                            <h6 class="multilanguage" data-en='German' data-pt='Alemão'></h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
@@ -239,9 +252,11 @@
             </div>
         </div>
     </section>
+    
+    <!-- <div class="card"></div> -->
 
     <section class="section bg-dark text-center">
-        <div class="container">
+        <!-- <div class="container">
             <div class="row text-center">
                 <div class="col-md-6 col-lg-3">
                     <div class="row ">
@@ -288,7 +303,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- <section class="section" id="service">
@@ -633,27 +648,27 @@
 
     <section class="section" id="blog">
         <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Accomplishments</h2>
+            <h2 class="mb-5"><span class="text-danger multilanguage" data-en='My' data-pt='Minhas'></span><span class="multilanguage" data-en=' Accomplishments' data-pt=' Realizações'></span></h2>
             <div class="row">
                 <div class="blog-card">
                     <div class="img-holder">
                         <img src="assets/imgs/kaggle.png" alt="">
                     </div>
                     <div class="content-holder">
-                        <h6 class="title">Gold Medalist at Kaggle’s AI Competition</h6>
+                        <h6 class="title multilanguage" data-en='Gold Medalist at Kaggle’s AI Competition' data-pt='Medalhista de Ouro em Competição de IA do Kaggle'></h6>
 
                         <p class="post-details">
-                            <a href="#">By: Admin</a>
+                            <!-- <a href="#">By: Admin</a>
                             <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a>
+                            <a href="#"><i class="ti-comment"></i> 123</a> -->
                         </p>
                         
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
+                        <p class="multilanguage" data-en='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.' data-pt='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
 
-                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
-                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+                        <p><b class="multilanguage" data-en='Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.' data-pt='Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.'></b></p>
+                        <p class="multilanguage" data-en='Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.' data-pt='Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.'></p>
 
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                        <a href="Documents/João Marrey - March Machine Learning Mania 2024.png" class="read-more"><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
                     </div>
                 </div><!-- end of blog wrapper -->
 
@@ -663,17 +678,17 @@
                         <img src="assets/imgs/toefl.png" alt="">
                     </div>
                     <div class="content-holder">
-                        <h6 class="title">C2 level at TOEFL IBT english exam</h6>
+                        <h6 class="title multilanguage" data-en='C2 level at TOEFL IBT english exam' data-pt='Nível C2 no Exame de Inglês TOEFL IBT'></h6>
 
                         <p class="post-details">
-                            <a href="#">By: Admin</a>
+                            <!-- <a href="#">By: Admin</a>
                             <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a>
+                            <a href="#"><i class="ti-comment"></i> 264</a> -->
                         </p>
                         
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+                        <p class="multilanguage" data-en='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.' data-pt='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
 
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                        <a href="Documents/TOEFL_Score_Report_9510843.pdf" class="read-more multilanguage" data-en='' data-pt=''><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
                     </div>
                 </div><!-- end of blog wrapper -->
                 <!-- blog-card -->
@@ -682,17 +697,17 @@
                         <img src="assets/imgs/CS50x.png" alt="">
                     </div>
                     <div class="content-holder">
-                        <h4 class="title">CS50X - Harvard’s Introduction to Computer Science online course</h4>
+                        <h4 class="title multilanguage" data-en='CS50X - Harvard’s Introduction to Computer Science online course' data-pt='CS50X - curso online de Harvard de Introdução à Ciência da Computação'></h4>
 
                         <p class="post-details">
-                            <a href="#">By: Admin</a>
+                            <!-- <a href="#">By: Admin</a>
                             <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a>
+                            <a href="#"><i class="ti-comment"></i> 312</a> -->
                         </p>
                         
-                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+                        <p class="multilanguage" data-en=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.' data-pt=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
 
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                        <a href="Documents/CS50x.pdf" class="read-more multilanguage" data-en='' data-pt=''><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
                     </div>
                 </div><!-- end of blog wrapper -->
                 <!-- blog-card -->
@@ -701,17 +716,17 @@
                         <img src="assets/imgs/CS50ai.png" alt="">
                     </div>
                     <div class="content-holder">
-                        <h4 class="title">CS50AI - Harvard’s Introduction to AI and Machine Learning online course</h4>
+                        <h4 class="title multilanguage" data-en='CS50AI - Harvard’s Introduction to AI and Machine Learning online course' data-pt='CS50AI - curso online de Harvard de Introdução a IA e Machine Learning'></h4>
 
                         <p class="post-details">
-                            <a href="#">By: Admin</a>
+                            <!-- <a href="#">By: Admin</a>
                             <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a>
+                            <a href="#"><i class="ti-comment"></i> 312</a> -->
                         </p>
                         
-                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+                        <p class="multilanguage" data-en=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.' data-pt=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
 
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                        <a href="Documents/CS50AI.pdf" class="read-more multilanguage" data-en='' data-pt=''><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
                     </div>
                 </div><!-- end of blog wrapper -->
                 <!-- blog-card -->
@@ -720,18 +735,18 @@
                         <img src="assets/imgs/python.png" alt="">
                     </div>
                     <div class="content-holder">
-                        <h4 class="title">FEADEV Python course</h4>
+                        <h4 class="title multilanguage" data-en='FEADEV Python Course' data-pt='Curso de Python da FEADEV'></h4>
 
                         <p class="post-details">
-                            <a href="#">By: Admin</a>
+                            <!-- <a href="#">By: Admin</a>
                             <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a>
+                            <a href="#"><i class="ti-comment"></i> 312</a> -->
                         </p>
                         
-                        <p> FEADEV is a programming focused student entity of USP</p>
-                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+                        <p class="multilanguage" data-en='FEADEV is a programming focused student entity of USP' data-pt='FEADEV é uma entidade estudantil da USP focada em programação'></p>
+                        <p class="multilanguage" data-en=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.' data-pt=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
 
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                        <a href="Documents/Certificado Curso de Python - João Marrey Mendonça.png" class="read-more multilanguage" data-en='' data-pt=''><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
                     </div>
                 </div><!-- end of blog wrapper -->
                 <!-- blog-card -->
@@ -740,17 +755,17 @@
                         <img src="assets/imgs/cae.png" alt="">
                     </div>
                     <div class="content-holder">
-                        <h4 class="title">C1 Advanced/Cambridge English: Advanced (CAE)</h4>
+                        <h4 class="title multilanguage" data-en='C1 Advanced/Cambridge English: Advanced (CAE)' data-pt='C1 Advanced/Cambridge English: Advanced (CAE)'></h4>
 
                         <p class="post-details">
-                            <a href="#">By: Admin</a>
+                            <!-- <a href="#">By: Admin</a>
                             <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a>
+                            <a href="#"><i class="ti-comment"></i> 312</a> -->
                         </p>
                         
-                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+                        <p class="multilanguage" data-en=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.' data-pt=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
 
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                        <a href="#" class="read-more multilanguage" data-en='' data-pt=''><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
                     </div>
                 </div><!-- end of blog wrapper -->
 
@@ -764,32 +779,32 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="contact-form-card">
-                        <h4 class="contact-title">Send a message</h4>
+                        <h4 class="contact-title"><span class="multilanguage" data-en='Send a Message' data-pt='Envie uma Mensagem'></span></h4>
                         <form action="">
                             <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Name *" required>
+                                <input  class="form-control multilanguage" type="text" data-en="Name *" data-pt="Nome *" required>
                             </div>
                             <div class="form-group">
                                 <input class="form-control" type="email" placeholder="Email *" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
+                                <textarea class="form-control multilanguage" id="" data-en="Message *" data-pt="Mensagem *" rows="7" required></textarea>
                             </div>
                             <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                                <button type="submit" class="form-control btn btn-primary multilanguage" data-en='Send Message' data-pt='Enviar Mensagem'></button>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
+                        <h4 class="contact-title"><span class="multilanguage" data-en='Get in Touch' data-pt='Entre em Contato'></span></h4>
                         <div class="row mb-2">
                             <div class="col-1 pt-1 mr-1">
                                 <i class="ti-mobile icon-md"></i>
                             </div>
                             <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (123) 456-789</span></h6>
+                                <h6 class="d-inline"><span class="multilanguage" data-en='Phone : ' data-pt='Telefone : '></span><br> <span class="text-muted">+55 (11) 94146-0905</span></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -797,7 +812,7 @@
                                 <i class="ti-map-alt icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted">12345 Fake ST NoWhere AB Country.</span></h6>
+                                <h6 class="d-inline"><span class="multilanguage" data-en='Location : ' data-pt='Localização : '></span><br> <span class="text-muted multilanguage" data-en='Sao Paulo, SP, Brazil' data-pt='São Paulo, SP, Brasil'></span></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -805,7 +820,7 @@
                                 <i class="ti-envelope icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">info@website.com</span></h6>
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">joaomarreymen@gmail.com</span></h6>
                             </div>
                         </div>
                         <ul class="social-icons pt-4">
