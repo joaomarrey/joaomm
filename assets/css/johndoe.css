@@ -11310,6 +11310,19 @@ p {
   visibility: hidden;
   transition: 0.5s;
   -webkit-transition: 0.5s;
+
+  padding: 30px 20px 30px 30px;
+  margin: 15px 0 15px !important;
+  display: inline-block;
+  width: 15px;
+  margin-right: 10px;
+  color: #444;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  opacity: .7;
+  font-size: 13px;
+  
 }
 
 .portfolio .portfolio-container .portfolio-item .content-holder .title {
@@ -11363,6 +11376,7 @@ p {
   opacity: .8;
 }
 
+
 .blog-card .content-holder .post-details {
   margin: 15px 0 15px !important;
 }
@@ -11380,6 +11394,14 @@ p {
   font-weight: 600;
   opacity: .7;
   font-size: 13px;
+}
+
+
+.sendbottom {
+  margin-top: auto; 
+  align-self: center; 
+  padding-bottom: 20px; 
+  background-color: #000;
 }
 
 .blog-card .content-holder .read-more {
@@ -11660,7 +11682,7 @@ pre .code {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .section.bg-custom-gray {

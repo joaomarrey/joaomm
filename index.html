@@ -10,6 +10,121 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + JohnDoe main styles -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
+    <style>
+        .container9247 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 90%;
+            margin: auto;
+            align-items: center;
+        }
+        .top-bord {
+            border: 1px solid #dee2e6;
+        }
+        .image-group3821 {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .fake-image-group {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .image-item6734 {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            width: 50%;
+            max-width: 600px;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            border-radius: 0px;
+            background-color: #ffffff;
+            position: relative;
+        }
+        .fake-image-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            width: 50%;
+            max-width: 600px;
+            /* border: 1px solid gray; */
+            /* padding: 20px; */
+            border-radius: 0px;
+            background-color: #ffffff;
+            position: relative;
+        }
+        .image-style9283 {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 0px;
+        }
+        /* .description-box1234 {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: left; 
+            text-align: left;
+            position: relative;
+            align-self: flex-end;
+        }
+        .description-box1234 button {
+             margin: 10px;
+            font-size: 16px; 
+            
+        } */
+        .description-box8472 {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            position: relative;
+        }
+        .description-box8472 h3 {
+            margin: 0 0 10px;
+            font-size: 22px;
+        }
+        .description-box8472 p {
+            margin: 0;
+            padding-top: 20px;
+            font-size: 16px;
+        }
+        .description-box8472 button {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .text-button7643 {
+            /* position: absolute; */
+            bottom: 0px;
+            right: 0px;
+            background: none;
+            color: red;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            font-size: 14px;
+            padding-top: 10px; 
+            /* align-self: center;  */
+            padding-bottom: 20px; 
+        }
+        .icon-center{
+            display: flex;
+            align-items: center; /* Center items vertically */
+            gap: 5px; /* Optional: Adds space between text and icon */
+            text-decoration: none; /* Optional: Removes underline */
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <!-- <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
@@ -24,7 +139,7 @@
                 <h4 class="header-subtitle multilanguage" data-en='Hello, I am' data-pt='Olá, eu sou'></h4>
                 <h1 class="header-title">João Marrey</h1>
                 <h6 class="header-mono multilanguage" data-en='Economist | Programmer' data-pt='Economista | Programador'></h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+                <button style="color: white" class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i><a style="color: white" class="multilanguage" data-en="See Resume" data-pt="Ver Currículo" href="Documents/cv en.pdf"></a></button>
             </div>
         </div>
     </header>
@@ -111,7 +226,7 @@
                     <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6 class="multilanguage" data-en='Economics' data-pt='Economia'></h6>
-                        <p class="subtitle multilanguage" data-en='voluptate commodi illo voluptatib.' data-pt='voluptate commodi illo voluptatib.'></p>
+                        <p class="subtitle multilanguage" data-en="Bachelor's degree in economics." data-pt='Bacharelado em economia.'></p>
                         <hr>
                     </div>
                 </div>
@@ -119,7 +234,7 @@
                     <div class="col-1 text-danger pt-1"><i class="ti-desktop icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6 class="multilanguage" data-en='Programming' data-pt='Programação'></h6>
-                        <p class="subtitle multilanguage" data-en=' exercitat Repellendus,  corrupt.' data-pt=' exercitat Repellendus,  corrupt.'></p>
+                        <p class="subtitle multilanguage" data-en='Professional experience with programming.' data-pt='Experiência profissional com programação.'></p>
                         <hr>
                     </div>
                 </div>
@@ -127,7 +242,7 @@
                     <div class="col-1 text-danger pt-1"><i class="ti-money icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6 class="multilanguage" data-en='Finance' data-pt='Finanças'></h6>
-                        <p class="subtitle multilanguage" data-en='Lorem ipsum dolor sit consectetur.' data-pt='Lorem ipsum dolor sit consectetur.'></p>
+                        <p class="subtitle multilanguage" data-en='Academic and professional experience with finance.' data-pt='Experiência profissional e acadêmica com finanças.'></p>
                         <hr>
                     </div>
                 </div>
@@ -255,585 +370,157 @@
     
     <!-- <div class="card"></div> -->
 
-    <section class="section bg-dark text-center">
-        <!-- <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="row ">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">500</h1>
-                            <p class="text-light mb-1">Hours Worked</p>
+    <!-- <section class="section bg-dark text-center">
+    </section> -->
+
+    <section class="section top-bord" id="blog">
+        <div class="container9247">
+            <div class="fake-image-group">
+                <div class="fake-image-item">
+                    <h2 class="mb-5"><span class="text-danger multilanguage" data-en='My' data-pt='Minhas'></span><span class="multilanguage" data-en=' Accomplishments' data-pt=' Realizações'></span></h2>
+                </div>
+                <div class="fake-image-item">
+                </div>
+            </div>
+            
+            <div class="image-group3821">
+                <div class="image-item6734">
+                    <img class="image-style9283" src="assets/imgs/kaggle.png" alt="Image 1">
+                    <div class="description-box8472">
+                        <h3 class="multilanguage" data-en='Gold Medalist at Kaggle’s AI Competition' data-pt='Medalhista de Ouro em Competição de IA do Kaggle'>Title 1</h3>
+                        <span class="line"></span> 
+                        <p class="multilanguage" data-en='The competing teams have to create a prediction of the results of the basketball competition March Madness, using Artificial Inteligence tools. My group "Pegasus" finished in 10th place out of 820 competitors and received a gold medal.' data-pt='Os times competidores tem que criar previsões dos resultados da competição de basquete March Madness, usando ferramentas de IA. Meu grupo "Pegasus" terminou em 10º lugar de 820 e recebeu medalha de ouro.'></p>
+                        <div class="text-button7643">
+                            <a href="Documents/João Marrey - March Machine Learning Mania 2024.png"><span class="multilanguage" style="font-size: medium;" data-en='View Certificate' data-pt='Ver Certificado'></span><i style="font-size: small;" class="ti-angle-double-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">50K</h1>
-                            <p class="text-light mb-1">Project Finished</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">200K</h1>
-                            <p class="text-light mb-1">Happy Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">2k</h1>
-                            <p class="text-light mb-1">Coffee Drinked</p>
+
+                <div class="image-item6734">
+                    <img class="image-style9283" src="assets/imgs/toefl.png" alt="Image 2">
+                    <div class="description-box8472">
+                        <h3 class="multilanguage" data-en='C2 level at TOEFL IBT english exam' data-pt='Nível C2 no Exame de Inglês TOEFL IBT'></h3>
+                        <span class="line"></span> 
+                        <p class="multilanguage" data-en="Scored 115 points out of a total of 120 on the TOEFL IBT standardized english test." data-pt="Pontuei 115 pontos de 120 totais no exame padronizado de inglês TOEFL."></p>
+                        <div class="text-button7643">
+                            <a href="Documents/TOEFL_Score_Report_9510843.pdf"><span class="multilanguage" style="font-size: medium;" data-en='View Certificate' data-pt='Ver Certificado'></span><i style="font-size: small;" class="ti-angle-double-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
-    </section>
 
-    <!-- <section class="section" id="service">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-vector text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Ullam</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+            <div class="image-group3821">
+                <div class="image-item6734">
+                    <img class="image-style9283" src="assets/imgs/CS50x.png" alt="Image 3">
+                    <div class="description-box8472">
+                        <h3 class="title multilanguage" data-en='CS50X - Harvard’s Introduction to Computer Science online course' data-pt='CS50X - curso online de Harvard de Introdução à Ciência da Computação'></h3>
+                        <span class="line"></span> 
+                        <p class="multilanguage" data-en="Harvard certification for the Introduction to Computer Science online course." data-pt="Certificação de Harvard para o curso online de Introdução às Ciência da computação."></p>
+                        <div class="text-button7643">
+                            <a href="Documents/CS50x.pdf"><span class="multilanguage" style="font-size: medium;" data-en='View Certificate' data-pt='Ver Certificado'></span><i style="font-size: small;" class="ti-angle-double-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-write text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Asperiores</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-package text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Tempora</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Provident</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Consectetur</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-support text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Veritatis</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+
+                <div class="image-item6734">
+                    <img class="image-style9283" src="assets/imgs/CS50ai.png" alt="Image 4">
+                    <div class="description-box8472">
+                        <h3 class="title multilanguage" data-en='CS50AI - Harvard’s Introduction to AI and Machine Learning online course' data-pt='CS50AI - curso online de Harvard de Introdução a IA e Machine Learning'></h3>
+                        <span class="line"></span> 
+                        <p class="multilanguage" data-en="Harvard certification for the Introduction to AI and Machine Learning online course." data-pt="Certificação de Harvard para o curso online de Introdução a IA e Machine Learning."></p>
+                        <div class="text-button7643">
+                            <a href="Documents/CS50AI.pdf"><span class="multilanguage" style="font-size: medium;" data-en='View Certificate' data-pt='Ver Certificado'></span><i style="font-size: small;" class="ti-angle-double-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section> -->
 
-    <!-- <section class="section bg-custom-gray" id="price">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>
-            <div class="row align-items-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Free</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">0</span>
-                            <span class="date">MO</span>
+            <div class="image-group3821">
+                <div class="image-item6734">
+                    <img class="image-style9283" src="assets/imgs/python.png" alt="Image 5">
+                    <div class="description-box8472">
+                        <h3 class="title multilanguage" data-en='FEADEV Python Course' data-pt='Curso de Python da FEADEV'></h3>
+                        <span class="line"></span> 
+                        <p class="multilanguage" data-en="Python programming course certification by FEADEV (student entity of the Universidade de São Paulo)." data-pt="Certificação do curso de programação em python da FEADEV (entidade estudantil da Universidade de São Paulo)."></p>
+                        <div class="text-button7643">
+                            <a href="Documents/Certificado Curso de Python - João Marrey Mendonça.png"><span class="multilanguage" style="font-size: medium;" data-en='View Certificate' data-pt='Ver Certificado'></span><i style="font-size: small;" class="ti-angle-double-right"></i></a>
                         </div>
-                        <ul class="list">
-                            <li class="list-item">5 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item"><span class="text-muted">No Domain</span></li>
-                            <li class="list-item">1 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Basic</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">10</span>
-                            <span class="date">MO</span>
+
+                <div class="image-item6734">
+                    <img class="image-style9283" src="assets/imgs/cae.png" alt="Image 6">
+                    <div class="description-box8472">
+                        <h3  class="title multilanguage" data-en='C1 Advanced/Cambridge English: Advanced (CAE)' data-pt='C1 Advanced/Cambridge English: Advanced (CAE)'></h3>
+                        <span class="line"></span> 
+                        <p class="multilanguage" data-en="C1 level english certification by the Cambridge University." data-pt="Certificação de inglês em nível c1 pela Cambridge University."></p>
+                        <div class="text-button7643">
+                            <a href="#"><span class="multilanguage" style="font-size: medium;" data-en='View Certificate' data-pt='Ver Certificado'></span><i style="font-size: small;" class="ti-angle-double-right"></i></a>
                         </div>
-                        <ul class="list">
-                            <li class="list-item">50 <span class="text-muted">Project</span></li>
-                            <li class="list-item">10GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">1<span class="text-muted">Domain</span></li>
-                            <li class="list-item">5 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center price-card-requried mb-4">
-                        <h3 class="price-card-title">Exclusive</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">25</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">150 <span class="text-muted">Project</span></li>
-                            <li class="list-item">15GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">5<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">15<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Pro</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">99</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">500 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1000GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">10<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">Unlimite<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- <section class="section bg-dark py-5">
-        <div class="container text-center">
-            <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
-            <button class="btn bg-primary w-lg" >Hire me</button>
-        </div>
-    </section> -->
-
-    <!-- Portfolio Section -->
-    <!-- <section class="section bg-custom-gray" id="portfolio">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
-            <div class="portfolio">
-                <div class="filters">
-                    <a href="#" data-filter=".new" class="active">
-                        New
-                    </a>
-                    <a href="#" data-filter=".advertising">
-                        Advertising
-                    </a>
-                    <a href="#" data-filter=".branding">
-                        Branding
-                    </a>
-                    <a href="#" data-filter=".web">
-                        Web
-                    </a>
-                </div>
-                <div class="portfolio-container"> 
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>   
-                        </div>             
-                    </div>
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div> 
-                        </div>                         
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-2.jpg" class="img-fluid" alt="">                         
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>    
-                        </div>              
-                    </div> 
-                    <div class="col-md-6 col-lg-4 web">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 advertising"> 
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="">                               
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                       
-                    </div> 
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="">  
-                           <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-3.jpg" class="img-fluid" alt="">       
-                           <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                       
-                    </div> 
-                    <div class="col-md-6 col-lg-4 advertising new"> 
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-4.jpg" class="img-fluid" alt="">            
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                                
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="">                        
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="">  
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-3.jpg" class="img-fluid" alt="">   
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                    
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-4.jpg" class="img-fluid" alt="">                      
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                      
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-5.jpg" class="img-fluid" alt="">          
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                   
-                    </div>
-                </div> 
-            </div>  
-        </div>            
-    </section> -->
-    <!-- End of portfolio section -->
-
-    <section class="section" id="blog">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger multilanguage" data-en='My' data-pt='Minhas'></span><span class="multilanguage" data-en=' Accomplishments' data-pt=' Realizações'></span></h2>
-            <div class="row">
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/kaggle.png" alt="">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title multilanguage" data-en='Gold Medalist at Kaggle’s AI Competition' data-pt='Medalhista de Ouro em Competição de IA do Kaggle'></h6>
-
-                        <p class="post-details">
-                            <!-- <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a> -->
-                        </p>
-                        
-                        <p class="multilanguage" data-en='In this competition the competing teams have to create a prediction of the results of the basketball competition March Madness using Artificial Inteligence tools. My group, named pegasus, finished the competition in 10th place out of 820 competitors, receiving a gold medal.' data-pt='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
-
-                        <!-- <p><b class="multilanguage" data-en='Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.' data-pt='Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.'></b></p> -->
-                        <!-- <p class="multilanguage" data-en='Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.' data-pt='Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.'></p> -->
-
-                        <a href="Documents/João Marrey - March Machine Learning Mania 2024.png" class="read-more"><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/toefl.png" alt="">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title multilanguage" data-en='C2 level at TOEFL IBT english exam' data-pt='Nível C2 no Exame de Inglês TOEFL IBT'></h6>
-
-                        <p class="post-details">
-                            <!-- <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a> -->
-                        </p>
-                        
-                        <p class="multilanguage" data-en='' data-pt='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
-
-                        <a href="Documents/TOEFL_Score_Report_9510843.pdf" class="read-more multilanguage" data-en='' data-pt=''><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/CS50x.png" alt="">
-                    </div>
-                    <div class="content-holder">
-                        <h4 class="title multilanguage" data-en='CS50X - Harvard’s Introduction to Computer Science online course' data-pt='CS50X - curso online de Harvard de Introdução à Ciência da Computação'></h4>
-
-                        <p class="post-details">
-                            <!-- <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a> -->
-                        </p>
-                        
-                        <p class="multilanguage" data-en=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.' data-pt=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
-
-                        <a href="Documents/CS50x.pdf" class="read-more multilanguage" data-en='' data-pt=''><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/CS50ai.png" alt="">
-                    </div>
-                    <div class="content-holder">
-                        <h4 class="title multilanguage" data-en='CS50AI - Harvard’s Introduction to AI and Machine Learning online course' data-pt='CS50AI - curso online de Harvard de Introdução a IA e Machine Learning'></h4>
-
-                        <p class="post-details">
-                            <!-- <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a> -->
-                        </p>
-                        
-                        <p class="multilanguage" data-en=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.' data-pt=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
-
-                        <a href="Documents/CS50AI.pdf" class="read-more multilanguage" data-en='' data-pt=''><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/python.png" alt="">
-                    </div>
-                    <div class="content-holder">
-                        <h4 class="title multilanguage" data-en='FEADEV Python Course' data-pt='Curso de Python da FEADEV'></h4>
-
-                        <p class="post-details">
-                            <!-- <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a> -->
-                        </p>
-                        
-                        <p class="multilanguage" data-en='FEADEV is a programming focused student entity of USP' data-pt='FEADEV é uma entidade estudantil da USP focada em programação'></p>
-                        <p class="multilanguage" data-en=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.' data-pt=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
-
-                        <a href="Documents/Certificado Curso de Python - João Marrey Mendonça.png" class="read-more multilanguage" data-en='' data-pt=''><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/cae.png" alt="">
-                    </div>
-                    <div class="content-holder">
-                        <h4 class="title multilanguage" data-en='C1 Advanced/Cambridge English: Advanced (CAE)' data-pt='C1 Advanced/Cambridge English: Advanced (CAE)'></h4>
-
-                        <p class="post-details">
-                            <!-- <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a> -->
-                        </p>
-                        
-                        <p class="multilanguage" data-en=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.' data-pt=' consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.'></p>
-
-                        <a href="#" class="read-more multilanguage" data-en='' data-pt=''><span class="multilanguage" data-en='View Certificate ' data-pt='Ver Certificado '></span><i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-
             </div>
         </div>
     </section>
+
 
     <div class="section contact" id="contact">
-        <div id="map" class="map"></div>
+        <!-- <div id="DEMO_MAP_ID" class="map"></div> -->
+        
+        <!-- <div></div> -->
+        
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-form-card">
-                        <h4 class="contact-title"><span class="multilanguage" data-en='Send a Message' data-pt='Envie uma Mensagem'></span></h4>
-                        <form action="">
-                            <div class="form-group">
-                                <input  class="form-control multilanguage" type="text" data-en="Name *" data-pt="Nome *" required>
+            
+            <div class="container9247">
+                <div class="fake-image-group">
+                    
+                    <gmp-map center="-23.558119593061292,-46.72881144969598" zoom="10" map-id="DEMO_MAP_ID" style="height: 400px">
+                        <gmp-advanced-marker
+                        position="-23.558119593061292,-46.72881144969598"
+                        title="FEA, USP"
+                        ></gmp-advanced-marker>
+                    </gmp-map>
+                    
+                    <div class="col-lg-4 top-bord" style="background-color: white; border-color: black;">
+                        <div class="contact-info-card" style="background-color: white;">
+                            <h4 class="contact-title"><span class="multilanguage" data-en='Get in Touch' data-pt='Entre em Contato'></span></h4>
+                            <div class="row mb-2">
+                                <div class="col-1 pt-1 mr-1">
+                                    <i class="ti-mobile icon-md"></i>
+                                </div>
+                                <div class="col-10 ">
+                                    <h6 class="d-inline"><span class="multilanguage" data-en='Phone : ' data-pt='Telefone : '></span><br> <span class="text-muted">+55 (11) 94146-0905</span></h6>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
+                            <div class="row mb-2">
+                                <div class="col-1 pt-1 mr-1">
+                                    <i class="ti-map-alt icon-md"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h6 class="d-inline"><span class="multilanguage" data-en='Location : ' data-pt='Localização : '></span><br> <span class="text-muted multilanguage" data-en='Sao Paulo, SP, Brazil' data-pt='São Paulo, SP, Brasil'></span></h6>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <textarea class="form-control multilanguage" id="" data-en="Message *" data-pt="Mensagem *" rows="7" required></textarea>
+                            <div class="row mb-2">
+                                <div class="col-1 pt-1 mr-1">
+                                    <i class="ti-envelope icon-md"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h6 class="d-inline">Email :<br> <span class="text-muted">joaomarreymen@gmail.com</span></h6>
+                                </div>
                             </div>
-                            <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary multilanguage" data-en='Send Message' data-pt='Enviar Mensagem'></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title"><span class="multilanguage" data-en='Get in Touch' data-pt='Entre em Contato'></span></h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline"><span class="multilanguage" data-en='Phone : ' data-pt='Telefone : '></span><br> <span class="text-muted">+55 (11) 94146-0905</span></h6>
-                            </div>
+                            <ul class="social-icons pt-4">
+                                <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/joao-marrey-mendonca"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a class="social-link text-dark" href="mailto:joaomarreymen@gmail.com"><i class="ti-google" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a class="social-link text-dark" href="https://github.com/joaomarrey"><i class="ti-github" aria-hidden="true"></i></a></li>
+                            </ul> 
                         </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline"><span class="multilanguage" data-en='Location : ' data-pt='Localização : '></span><br> <span class="text-muted multilanguage" data-en='Sao Paulo, SP, Brazil' data-pt='São Paulo, SP, Brasil'></span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">joaomarreymen@gmail.com</span></h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/joao-marrey-mendonca"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="mailto:joaomarreymen@gmail.com"><i class="ti-google" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/joaomarrey"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        </ul> 
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
+
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
@@ -853,7 +540,12 @@
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
     
     <!-- Google mpas -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script> -->
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0HHD_zwBYSBmR1cFEJMaQmLgae46yx48&callback=initMap"></script> -->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0HHD_zwBYSBmR1cFEJMaQmLgae46yx48&libraries=maps,marker&v=beta"
+    defer
+></script>
 
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
